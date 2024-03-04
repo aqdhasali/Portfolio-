@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About</title>
+        <link rel="stylesheet" href="../CSS/main.css"> 
+        <script src="https://kit.fontawesome.com/39fc6ce4d6.js" crossorigin="anonymous"></script> <!--Font Awesome Icons-->
+    </head>
+    <body>
+        <header>
+            <!-- ==========Navbar=============== -->
+            <nav class="navbar">
+                <!-- ==========logo======== -->
+                <span id="logo"><img alt="logo" src="../Images/logo.png"></span>
+                <ul class="navigation">
+                    <!-- ======Pages=========== -->
+                    <li><a href="../HTML/main.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="../HTML/blogs.html">Blogs</a></li>
+                    <li><a href="../HTML/form.html">Form</a></li>
+                </ul>
+                <!-- =========Hamburger Menu========== -->
+                <button class="hamburger">
+                    <div class="bar"></div>
+                </button>
+            </nav>
+        </header>
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+            <a href="../HTML/main.html">Home</a>
+            <a href="#">About</a>
+            <a href="../HTML/blogs.html">Blogs</a>
+            <a href="../HTML/form.html">Form</a>
+        </nav>
+        <section>
+            <div class="about-section">
+                <div class="about-image-box">
+                    <!-- My Image -->
+                    <img alt="my-image2" src="../Images/myimg2.jpg">
+                </div>
+                
+                <div class="content">
+                    <h1>ABOUT ME</h1>
+                    
+                    <p>
+                        I am a second-year computer science undergraduate student with a strong focus on web development and 
+                        mobile application design. With a deep passion for staying up-to-date with the latest technologies, 
+                        I am constantly exploring the cutting edge of the tech world. Additionally, I have a burgeoning
+                        interest in artificial intelligence and its potential to revolutionize various industries. 
+                        This curiosity drives me to delve deeper into the field and explore innovative ways to 
+                        integrate AI into practical applications. I am committed to leveraging my skills and knowledge 
+                        to contribute meaningfully to projects that push the boundaries of technology
+                    </p>
+                </div>
+            </div>
+
+            
+
+        </section>
+
+        <!-- Footer -->
+        <footer class="common-footer">
+            <h3><i class="fa-solid fa-phone"></i>Contact : +94767999532</h3>    
+            <h3><i class="fa-solid fa-envelope"></i>Email : aqdhasali468@gmail.com</h3>    
+            <h3><i class="fa-solid fa-location-dot"></i>Location: Colombo, Sri Lanka</h3>     
+        </footer>
+
+
+
+        <script>
+            // Hamburger Menu function
+            const nav_btn = document.querySelector('.hamburger');
+            const mobile_nav = document.querySelector('.mobile-nav');
+    
+            nav_btn.addEventListener('click',function(){
+                nav_btn.classList.toggle('is-active'); // To open the hamburger menu when the button is toggled.
+                mobile_nav.classList.toggle('is-active') //To display the content iniside the mobile nav
+    
+            })
+        </script>
+    </body>
+</html>

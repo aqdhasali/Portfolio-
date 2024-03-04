@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aqdhas Ali</title>
+        <link rel="stylesheet" href="../CSS/main.css">
+        <script src="https://kit.fontawesome.com/39fc6ce4d6.js" crossorigin="anonymous"></script> <!--Font Awesome Icons-->
+    </head>
+    <body>
+        <header>
+            <!-- ==============Navigation Bar============ -->
+            <nav class="navbar">
+                <!-- ==============Logo=================== -->
+                <span id="logo"><img alt="logo" src="../Images/logo.png"></span>
+                <ul class="navigation">
+                    <!--============ Pages============= -->
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="../HTML/about.html">ABOUT</a></li>
+                    <li><a href="../HTML/blogs.html">BLOGS</a></li>
+                    <li><a href="../HTML/form.html">FORM</a></li>
+                </ul>
+                <!-- =====Button for the Hamburger Menu========== -->
+                <button class="hamburger">
+                    <div class="bar"></div>
+                </button>
+            </nav>
+        </header>
+        <!-- Mobile navigation bar -->
+        <nav class="mobile-nav">
+            <a href="#">Home</a>
+            <a href="../HTML/about.html">About</a>
+            <a href="../HTML/blogs.html">Blogs</a>
+            <a href="../HTML/form.html">Form</a>
+        </nav>
+        <section class="main-page">
+            <div class="container">
+                <div class="personal-details">
+                    <div class="about">
+                        <!-- Name and a Small description -->
+                        <h1>Aqdhas Ali</h1>
+                        <p>Hi! I'm a Passionate computer science student with a
+                        keen interest in fullstack development and finding innovative solutions for real world problems .</p>
+
+                        <!-- Social Media icons and links -->
+                        <div class="side-info">
+                            <a href="https://www.facebook.com/profile.php?id=100080393617584" ><i class="fa-brands fa-facebook "></i></a>
+                            <a href="https://instagram.com/_aqdhas?igshid=M3p4cWV3NDRwNmo=" ><i class="fa-brands fa-instagram "></i></a>
+                            <a href="https://x.com/aqdhas07?t=LpF1thiRhbdut2nE8-tcMQ&s=09" ><i class="fa-brands fa-square-x-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/aqdhas-ali-27243b228/" ><i class="fa-brands fa-linkedin "></i></a>
+                        </div>
+                        
+                        <!-- Resume button to view my cv -->
+                        <div class="resume-button">
+                            <button onclick="openCV()">RESUME</button>
+                        </div>
+                    </div>
+                    <!-- Div for my image
+                    <div class="image-box">
+                        <img alt="my-image" src="../Images/myimg.png">
+                    </div> -->
+                </div>  
+            </div>
+        
+        
+            
+
+
+        </section>
+        <!-- Footer - This footer is used throughout the whole website for every pages -->
+
+        <footer class="common-footer">
+            <h3><i class="fa-solid fa-phone"></i>Contact : +94767999532</h3>    
+            <h3><i class="fa-solid fa-envelope"></i>Email : aqdhasali468@gmail.com</h3>    
+            <h3><i class="fa-solid fa-location-dot"></i>Location: Colombo, Sri Lanka</h3>    
+        </footer>
+
+
+
+        <script>
+            // Function to open my cv
+            function openCV() {
+                window.open('../AqdhasAli_20210860.pdf');
+            }
+            // Hamburger Menu
+            const nav_btn = document.querySelector('.hamburger');
+            const mobile_nav = document.querySelector('.mobile-nav');
+    
+            nav_btn.addEventListener('click',function(){
+                nav_btn.classList.toggle('is-active'); // To open the hamburger menu when the button is toggled.
+                mobile_nav.classList.toggle('is-active') //To display the content iniside the mobile nav
+    
+            })
+        </script>
+
+    </body>
+</html>
